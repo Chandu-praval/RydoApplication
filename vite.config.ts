@@ -43,13 +43,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
 
-  server: {
-    proxy: {
-      "/": {
-        target: "https://rydo-c5hea5ggafcngzgz.southindia-01.azurewebsites.net",
-        changeOrigin: true,
-        secure: false
-      }
-    }
+  build: {
+    chunkSizeWarningLimit: 1000
   }
 })
