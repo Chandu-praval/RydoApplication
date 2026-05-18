@@ -7,6 +7,7 @@ import { createCustomer,createDriver } from "../../services/authService/AuthServ
 import FormInput from "../Common/formInput/FormInput";
 import Validator from "../../services/ValidatorService";
 import { ToastContainer, toast } from "react-toastify";
+import signUpImage from "../../assets/RideBook.jpg"
 const emptyForm: IFormData = {
   FullName: "",
   EmailId: "",
@@ -156,7 +157,7 @@ function Signup(): JSX.Element {
               <div className="row g-0 h-100">
                 <div className="col-md-6">
                   <img
-                    src="../../assets/RideBook.jpg"
+                    src={signUpImage}
                     className="img-fluid h-100 signup-img"
                     alt="Logo"
                   />
