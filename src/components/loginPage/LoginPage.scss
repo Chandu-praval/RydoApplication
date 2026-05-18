@@ -1,0 +1,63 @@
+.login-page {
+  min-height: calc(100vh - 70px);
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-card {
+  width: 100%;
+  max-width: 80%;
+  height: 80vh;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.login-row {
+  height: 100%;
+}
+.login-row .col-md-6:first-child img {
+  height: 100%;
+  width: 100%;
+
+}
+
+.form-container {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.form-container::-webkit-scrollbar {
+  width: 6px;
+}
+.form-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+small {
+  display: block;
+  min-height: 18px !important;
+  font-size: 0.7rem !important;
+  margin-top: 2px ;
+}
+
+.loginLable{
+  font-size: 0.8rem;
+  font-weight: 500 !important;
+}
+.plain-button {
+  background: none;
+  
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500 !important;
+}
+@media(max-width:992px){
+  .login-card{
+    height: auto !important;
+  }
+}

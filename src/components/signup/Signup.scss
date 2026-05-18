@@ -1,0 +1,101 @@
+.userForm {
+  max-width: 70%;
+
+}
+.userForm-content {
+  height: 80vh; 
+  margin-top: 4rem;            
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.modal-body {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+}
+.vehicleType{
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.input{
+ font-size: 0.8rem;
+}
+.modal-body .row {
+  flex: 1;
+  height: 100%;
+  margin: 0;
+}
+.modal-body .col-md-6 {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.signup-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.form-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.2rem;
+}
+
+
+
+.form-footer {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  z-index: 10;
+  border-top: 1px solid #eee;
+}
+
+
+
+.role-card {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: #f8f9fa;
+}
+
+.role-card:hover {
+  border-color: #0d6efd;
+  background: #fff;
+}
+
+.role-card.active {
+  border-color: #0d6efd;
+  background: #e7f1ff;
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+@media (max-width:992px){
+  .userForm-content{
+    height: 100% !important;
+    max-height: 100% ;
+  }
+}
+
+@media (max-width: 576px) {
+  .userForm {
+    max-width: 95%;
+  }
+
+  .modal-body .row {
+    flex-direction: column;
+  }
+
+  .signup-img {
+    height: 20vh;
+  }
+}

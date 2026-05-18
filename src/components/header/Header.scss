@@ -1,0 +1,137 @@
+
+.driveready-navbar {
+  background: #041627;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+}
+.driveready-navbar .navbar-brand {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+}
+.driveready-navbar .nav-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.72);
+  transition: all 0.25s ease;
+  padding: 4px 0;
+}
+.driveready-navbar .nav-link:hover {
+  color: #b4c5ff;
+}
+.driveready-navbar .nav-link.active-link {
+  color: #ffffff;
+  border-bottom: 2px solid #0051d5;
+}
+.navbar-login-btn {
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+.navbar-login-btn:hover {
+  color: #b4c5ff;
+}
+.navbar-signup-btn {
+  background: #0051d5 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 7px 18px !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  transition: all 0.25s ease !important;
+}
+.navbar-signup-btn:hover {
+  background: #316bf3 !important;
+  transform: scale(0.97);
+}
+.profile-menu-container {
+  position: relative;
+}
+.material-symbols-outlined span{
+  font-size: 0.9rem;
+}
+.help-icon{
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.profile-dropdown {
+  position: absolute;
+  top: 55px;
+  // right: 0;
+  right: 0;
+  min-width: 150px;
+  background: rgb(249, 247, 247);
+  border-radius: 12px;
+  padding: 8px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.profile-dropdown-item {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 8px 10px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+
+.profile-dropdown-item:hover {
+  background: #f5f5f5;
+}
+.logout-item {
+  color: #e53935;
+}
+.navbar-icon {
+  color: #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.navbar-icon:hover {
+  color: #b4c5ff;
+}
+.nav-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.profile-avatar {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border-radius: 50%;
+  background: #0051d5;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    padding-top: 1rem;
+  }
+
+  .navbar-nav {
+    margin-bottom: 1rem;
+  }
+}
