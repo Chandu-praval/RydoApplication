@@ -156,7 +156,7 @@ function Signup(): JSX.Element {
               <div className="row g-0 h-100">
                 <div className="col-md-6">
                   <img
-                    src="src/assets/RideBook.jpg"
+                    src="../../assets/RideBook.jpg"
                     className="img-fluid h-100 signup-img"
                     alt="Logo"
                   />
