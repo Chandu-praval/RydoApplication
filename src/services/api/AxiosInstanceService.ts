@@ -1,10 +1,11 @@
 import axios from "axios";
+const BASE_URL = import.meta.env.VITE_API_URL;
+export const api = axios.create({
+  baseURL: BASE_URL,
+  withCredentials: true,
+});
 
-export const api=axios.create({
-    baseURL:"/",
-    withCredentials:true
-})
-export const rideApi=axios.create({
-     baseURL:"/Ride",
-    withCredentials:true
-})
+export const rideApi = axios.create({
+  baseURL: `${BASE_URL}/Ride`,
+  withCredentials: true,
+});

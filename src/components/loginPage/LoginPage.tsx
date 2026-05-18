@@ -6,8 +6,6 @@ import type { ILoginFormData, ILoginFormErrors } from "../../Interfaces/ILoginFo
 import "./LoginPage.scss";
 import { useAuth } from "../authContext/AuthContext";
 import { ToastContainer, toast } from "react-toastify";
-import Input from "@mui/material/Input";
-
 const emptyForm: ILoginFormData = {
   EmailId: "",
   Password: "",
