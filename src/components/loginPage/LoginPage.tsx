@@ -4,7 +4,9 @@ import Validator from "../../services/ValidatorService";
 import { UpdateUser, Userlogin } from "../../services/authService/AuthService";
 import type { ILoginFormData, ILoginFormErrors } from "../../Interfaces/ILoginFormData";
 import "./LoginPage.scss";
+import loginImage from "../../assets/RydoLoginImage.jpg"
 import { useAuth } from "../authContext/AuthContext";
+
 import { ToastContainer, toast } from "react-toastify";
 const emptyForm: ILoginFormData = {
   EmailId: "",
@@ -106,7 +108,7 @@ function LoginPage(): JSX.Element {
           <div className="row g-0 login-row">
             <div className="col-md-6">
               <img
-                src="src/assets/RydoLoginImage.jpg"
+                src={ loginImage}
                 className="img-fluid rounded-start"
                 alt="Logo"
               />
