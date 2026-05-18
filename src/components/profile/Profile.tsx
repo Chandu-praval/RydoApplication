@@ -34,8 +34,13 @@ export default function Profile() {
   if (!user) {
     return <p className="text-center mt-5">Loading profile...</p>;
   }
-  const isCustomer = (u: IDriver | ICustomer): u is ICustomer => userData.role === "user";
-  const isDriver = (u: IDriver | ICustomer): u is IDriver => userData.role !== "user";
+  const isDriver = (
+  u: IDriver | ICustomer
+): u is IDriver => "vehicles" in u;
+
+const isCustomer = (
+  u: IDriver | ICustomer
+): u is ICustomer => !("vehicles" in u);
   return (
     <div className="container mt-2 profile-container">
       <div className="card shadow profile-card p-4">
